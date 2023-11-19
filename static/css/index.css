@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #cbecf5; /* Background color for the body */
+    color: #333; /* Text color */
+}
+
+h1 {
+    color: #0e0770; /* Heading color */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#upload-btn {
+    padding: 8px 12px;
+    background-color: #496fa8; /* Upload button background color */
+    color: #fff; /* Upload button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    /*width: 20%;*/
+    /* font-size: medium; */
+}
+
+#predict-btn {
+    padding: 8px 12px;
+    background-color: #46bd56; /* Predict button background color */
+    color: #fff; /* Predict button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*width: 20%;*/
+    /* font-size: medium;*/
+}
+
+#image-preview {
+    display: none;
+    margin-top: 20px;
+}
+
+#predictionText {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ba3939; /* Prediction text color */
+}
+
+#predict-btn[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
