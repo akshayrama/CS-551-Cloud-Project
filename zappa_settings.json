@@ -1,0 +1,13 @@
+{
+  "cs551_zappa_deployment": {
+    "app_function": "app.app",
+    "aws_region": "us-east-1",
+    "profile_name": "cs551_project_user",
+    "project_name": "image",
+    "runtime": "python3.8",
+    "s3_bucket": "cs551-project-bucket",
+    "environment_variables": {
+      "FLASK_ENV": "production"
+    }
+  }
+}
