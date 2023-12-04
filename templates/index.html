@@ -104,7 +104,9 @@
         const formData = new FormData();
         formData.append('image', imageFile);
 
-        fetch('/predict', {
+        const predictEndpoint = "{{ url_for('predict') }}";
+
+        fetch(predictEndpoint, {
             method: 'POST',
             body: formData
         })
